@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<fx:root type="BorderPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <TableView fx:id="workerRankingTable" prefWidth="610.0" BorderPane.alignment="CENTER">
+        <columns>
+            <TableColumn fx:id="workerFirstNameColumn" editable="false" prefWidth="100.0" sortable="false" text="Vorname" />
+          <TableColumn fx:id="workerLastNameColumn" editable="false" prefWidth="100.0" sortable="false" text="Nachname" />
+            <TableColumn fx:id="workerPointsColumn" editable="false" prefWidth="100.0" text="Punkte" />
+            <TableColumn fx:id="maxTimeColumn" editable="false" prefWidth="100.0" sortable="false" text="max" />
+            <TableColumn fx:id="minTimeColumn" editable="false" prefWidth="100.0" sortable="false" text="min" />
+            <TableColumn fx:id="avgTimeColumn" editable="false" prefWidth="100.0" sortable="false" text="avg" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </center>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+   <bottom>
+      <TabPane fx:id="taskTabPane" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </TabPane>
+   </bottom>
+</fx:root>
