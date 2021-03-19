@@ -1,0 +1,146 @@
+plugins {
+    id 'application'
+    id 'eclipse'
+    id 'idea'
+    id 'jacoco'
+    id 'java-library'
+    id 'checkstyle'
+    id 'com.github.johnrengelman.shadow' version "5.2.0"
+    id 'org.barfuin.gradle.jacocolog' version '1.1.1'
+    id 'org.openjfx.javafxplugin' version '0.0.8'
+}
+
+
+repositories {
+    jcenter()
+}
+
+
+repositories {
+    mavenCentral() 
+}
+
+dependencies {
+// https://mvnrepository.com/artifact/com.itextpdf/itextpdf
+compile group: 'com.itextpdf', name: 'itextpdf', version: '5.5.13.1'
+}
+
+
+dependencies {
+    testImplementation 'junit:junit:4.12'
+
+    // JavaFX for all (targeted) platforms
+    compile "org.openjfx:javafx-base:11:win"
+    compile "org.openjfx:javafx-graphics:11:win"
+    compile "org.openjfx:javafx-controls:11:win"
+    compile "org.openjfx:javafx-fxml:11:win"
+    compile "org.openjfx:javafx-web:11:win"
+    compile "org.openjfx:javafx-swing:11:win"
+    compile "org.openjfx:javafx-media:11:win"
+
+    compile "org.openjfx:javafx-base:11:linux"
+    compile "org.openjfx:javafx-graphics:11:linux"
+    compile "org.openjfx:javafx-controls:11:linux"
+    compile "org.openjfx:javafx-fxml:11:linux"
+    compile "org.openjfx:javafx-web:11:linux"
+    compile "org.openjfx:javafx-swing:11:linux"
+    compile "org.openjfx:javafx-media:11:linux"
+
+    compile "org.openjfx:javafx-base:11:mac"
+    compile "org.openjfx:javafx-graphics:11:mac"
+    compile "org.openjfx:javafx-controls:11:mac"
+    compile "org.openjfx:javafx-fxml:11:mac"
+    compile "org.openjfx:javafx-web:11:mac"
+    compile "org.openjfx:javafx-swing:11:mac"
+    compile "org.openjfx:javafx-media:11:mac"
+}
+
+
+eclipse {
+    project {
+        name = 'Projekt 1'
+    }
+}
+
+javafx {
+ 		version = '11.0.2'
+        modules = [ 'javafx.controls','javafx.web', 'javafx.fxml', 'javafx.swing', 'javafx.media', 'javafx.graphics' ]
+}
+
+sourceSets.main.java.srcDirs = ['src']
+sourceSets.main.resources.srcDirs = ['src']
+sourceSets.test.java.srcDirs = ['tests']
+sourceSets.test.resources.srcDirs = ['tests']
+
+test {
+    useJUnit()
+
+    maxHeapSize = '1G'
+
+    ignoreFailures = true
+
+    finalizedBy jacocoTestReport // Generate test report for coverage
+}
+
+javadoc {
+    exclude 'application/**'
+    exclude 'view/**'
+}
+
+task testJavadoc(type: Javadoc) {
+    source = sourceSets.test.allJava
+    classpath = sourceSets.test.compileClasspath
+
+    destinationDir = file("${buildDir}/docs/testjavadoc")
+}
+
+tasks.withType(JavaExec) {
+        jvmArgs '-Xdebug', '-Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5005'
+}
+
+//assemble.dependsOn shadowJar
+
+checkstyle {
+    configFile file("libs/javadoc_checks.xml")
+    ignoreFailures = true
+}
+
+checkstyleMain {
+    source = sourceSets.main.allJava
+    exclude 'application/**'
+    exclude 'view/**'
+}
+checkstyleTest {
+    source = sourceSets.test.allJava
+}
+
+jacocoTestReport {
+    dependsOn test
+    reports {
+        csv.enabled false
+        xml.enabled true
+        html.destination file("${buildDir}/reports/coverage")
+    }
+    afterEvaluate {
+        classDirectories.setFrom(files(classDirectories.files.collect {
+            fileTree(dir: it, exclude: ['application/**','view/**', 'model/TestDataFactory*'])
+        }))
+    }
+}
+
+jacocoLogTestCoverage {
+    counters {
+        showBranchCoverage = false // Breaks otherwise
+    }
+}
+
+shadowDistZip {
+    into(project.name+"-shadow") {
+        from '.'
+        include 'Produktbeschreibung.pdf'
+    }
+}
+
+compileJava.options.encoding = 'UTF-8'
+
+mainClassName = 'application.Runner'

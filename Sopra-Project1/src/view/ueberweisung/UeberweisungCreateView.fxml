@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" type="ScrollPane" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <content>
+      <BorderPane fx:id="MainPane1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="904.0" prefWidth="627.0">
+         <center>
+            <GridPane BorderPane.alignment="CENTER">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="275.0" minWidth="10.0" prefWidth="201.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="402.0" minWidth="10.0" prefWidth="386.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="62.0" minHeight="0.0" prefHeight="23.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="87.0" minHeight="0.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="243.0" minHeight="3.0" prefHeight="26.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="447.0" minHeight="10.0" prefHeight="176.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="508.0" minHeight="0.0" prefHeight="508.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="349.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="175.0" minHeight="10.0" prefHeight="85.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Versicherungsnummer" />
+                  <TextField fx:id="Versicherungsnummer" prefHeight="25.0" prefWidth="419.0" GridPane.columnIndex="1" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Arztnummer von zu überwiesendem Arzt" wrappingWidth="202.90625" GridPane.rowIndex="2" />
+                  <TextField fx:id="ArztBezeich" prefHeight="25.0" prefWidth="295.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <VBox prefHeight="202.0" prefWidth="190.0" GridPane.rowIndex="3">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Auftrag" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="197.0" prefWidth="187.0" GridPane.rowIndex="4">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Untersuchungsberichte" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="5" />
+                  <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                     <center>
+                        <Button fx:id="FortFahren" mnemonicParsing="false" onAction="#UeberweisungReview" prefHeight="25.0" prefWidth="197.0" text="Fortfahren" BorderPane.alignment="CENTER" />
+                     </center>
+                     <left>
+                        <Button fx:id="toFunctionView" mnemonicParsing="false" onAction="#toMainView" prefHeight="25.0" prefWidth="192.0" text="Zurück" BorderPane.alignment="CENTER" />
+                     </left>
+                  </BorderPane>
+                  <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <Button fx:id="CheckButton" mnemonicParsing="false" onAction="#checkVersicherungsnum" text="Check" />
+                        <Text fx:id="HiddenText" fill="#f20404" strokeType="OUTSIDE" strokeWidth="0.0" text="Nummer ungültig !!!" textAlignment="CENTER" visible="false" />
+                     </children>
+                  </HBox>
+                  <ScrollPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <content>
+                        <TextArea fx:id="Auftrag" prefHeight="173.0" prefWidth="385.0" />
+                     </content>
+                  </ScrollPane>
+                  <ScrollPane prefHeight="420.0" prefWidth="359.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <content>
+                        <FlowPane fx:id="Flow" prefHeight="509.0" prefWidth="385.0" />
+                     </content>
+                  </ScrollPane>
+               </children>
+               <BorderPane.margin>
+                  <Insets left="20.0" right="20.0" top="20.0" />
+               </BorderPane.margin>
+            </GridPane>
+         </center>
+      </BorderPane>
+   </content>
+</fx:root>

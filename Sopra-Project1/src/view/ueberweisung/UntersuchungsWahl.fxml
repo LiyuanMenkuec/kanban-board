@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="528.0" prefWidth="452.0" type="TitledPane" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <content>
+      <GridPane prefHeight="419.0" prefWidth="423.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="46.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="43.0" minHeight="8.0" prefHeight="35.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="84.0" minHeight="0.0" prefHeight="68.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="95.0" minHeight="0.0" prefHeight="78.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="102.0" minHeight="0.0" prefHeight="88.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="46.0" minHeight="0.0" prefHeight="40.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Datum :     " />
+                  <Text fx:id="Date" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" />
+               </children>
+            </HBox>
+            <HBox prefHeight="21.0" prefWidth="247.0" GridPane.columnIndex="1">
+               <children>
+                  <RadioButton fx:id="GrundChoose" disable="true" mnemonicParsing="false" text="Grund" visible="false" />
+                  <Text fx:id="Grund" strokeType="OUTSIDE" strokeWidth="0.0" text="fdsfdsfsdddddddddddddddddddddddddddddddddddddddddddddddddd" visible="false" wrappingWidth="158.99609375" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+               <children>
+                  <RadioButton fx:id="SymtomeChoose" mnemonicParsing="false" prefHeight="11.0" prefWidth="142.0" text="Symtome" />
+                  <Text fx:id="Symtome" strokeType="OUTSIDE" strokeWidth="0.0" text="dfsdddddddddddddddddddddddddddddddddddddddddddddddddddd" visible="false" wrappingWidth="132.3671875" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <RadioButton fx:id="ICDChoose" mnemonicParsing="false" text="ICD" />
+                  <Text fx:id="ICD" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" wrappingWidth="143.13671875" />
+               </children>
+            </HBox>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" GridPane.rowIndex="2" />
+            <ScrollPane prefHeight="40.0" prefWidth="184.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <content>
+                  <VBox fx:id="Behandlung" prefHeight="83.0" prefWidth="215.0" />
+               </content>
+            </ScrollPane>
+            <ScrollPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <content>
+                  <VBox fx:id="Medikamente" prefHeight="94.0" prefWidth="216.0" />
+               </content>
+            </ScrollPane>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" GridPane.rowIndex="3" />
+            <ScrollPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <content>
+                  <VBox fx:id="Notiz" prefHeight="101.0" prefWidth="217.0" />
+               </content>
+            </ScrollPane>
+            <RadioButton fx:id="BehandlungChoose" mnemonicParsing="false" text="Behandlung" GridPane.rowIndex="2" />
+            <RadioButton fx:id="MedChoose" mnemonicParsing="false" text="Medikamente" GridPane.rowIndex="3" />
+            <RadioButton fx:id="NotizChoose" mnemonicParsing="false" text="Notizen" GridPane.rowIndex="4" />
+            <RadioButton fx:id="chooseThis" mnemonicParsing="false" text="Diese Bericht wählen" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+         </children>
+      </GridPane>
+   </content>
+</fx:root>

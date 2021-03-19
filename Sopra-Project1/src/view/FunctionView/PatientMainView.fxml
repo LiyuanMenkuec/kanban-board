@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" type="AnchorPane" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <opaqueInsets>
+      <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+   </opaqueInsets>
+   <children>
+      <ImageView fx:id="PatientImage" fitHeight="166.0" fitWidth="168.0" layoutX="52.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/patientimage.jpg" />
+         </image>
+      </ImageView>
+      <GridPane layoutX="236.0" layoutY="45.0" prefHeight="185.0" prefWidth="353.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="168.0" minWidth="10.0" prefWidth="88.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="290.0" minWidth="10.0" prefWidth="265.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="100.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="100.0" minHeight="10.0" prefHeight="26.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="100.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="100.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vorname" />
+            <Text fx:id="pVorname" strokeType="OUTSIDE" strokeWidth="0.0" text="Patient vorname" visible="false" wrappingWidth="274.0" GridPane.columnIndex="1" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nachname" GridPane.rowIndex="1" />
+            <Text fx:id="pNachname" strokeType="OUTSIDE" strokeWidth="0.0" text="Patient nachname" visible="false" wrappingWidth="283.95703125" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Geburtstag" GridPane.rowIndex="2" />
+            <Text fx:id="pBday" strokeType="OUTSIDE" strokeWidth="0.0" text="Patient Birthday" visible="false" wrappingWidth="273.01171875" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Geschlecht" GridPane.rowIndex="3" />
+            <Text fx:id="pSex" strokeType="OUTSIDE" strokeWidth="0.0" text="Patient Sex" visible="false" wrappingWidth="262.376953125" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="4">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Address" wrappingWidth="42.50390625" />
+               </children>
+            </VBox>
+            <TextFlow fx:id="pAdress" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Hausarzt" GridPane.rowIndex="5" />
+            <Button fx:id="pHausArzt" mnemonicParsing="false" onAction="#zumHausArzt" prefHeight="25.0" prefWidth="268.0" text="zum Hausarzt" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="50.0" layoutY="283.0" prefHeight="96.0" prefWidth="538.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="64.0" minHeight="10.0" prefHeight="55.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="53.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="pZumDataAndern" mnemonicParsing="false" onAction="#zumDatenAndern" prefHeight="92.0" prefWidth="297.0" text="Daten Andern" />
+            <Button fx:id="pZumUntersuchungsberichte" mnemonicParsing="false" prefHeight="49.0" prefWidth="271.0" text="Hausarzt Einstellen" GridPane.columnIndex="1" />
+            <Button fx:id="pZumUeberweisung" mnemonicParsing="false" onAction="#zumUeberweisungsAnsehen" prefHeight="54.0" prefWidth="277.0" text="Überweisungen ansehen" GridPane.rowIndex="1" />
+            <Button fx:id="pZumRevision" mnemonicParsing="false" onAction="#zumRevision" prefHeight="117.0" prefWidth="320.0" text="Revisionen" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <Button fx:id="PLogout" layoutX="263.0" layoutY="413.0" mnemonicParsing="false" onAction="#zumLoginView" prefHeight="34.0" prefWidth="102.0" text="Logout" />
+   </children>
+</fx:root>

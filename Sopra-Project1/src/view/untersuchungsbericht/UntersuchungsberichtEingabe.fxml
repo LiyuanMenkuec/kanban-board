@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="470.0" type="BorderPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <VBox prefHeight="200.0" prefWidth="350.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="untersuchungsberichtVersicherungsnummer" promptText="Versicherungsnummer" />
+            <Pane prefHeight="12.0" prefWidth="354.0" />
+            <SplitPane dividerPositions="0.5" prefHeight="25.0" prefWidth="350.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <DatePicker fx:id="untersuchungsberichtDatePicker" promptText="Datum" />
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <TextField fx:id="untersuchungsberichtUhrzeit" layoutY="-1.0" prefHeight="25.0" prefWidth="171.0" promptText="Uhrzeit" />
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+            <Pane prefHeight="12.0" prefWidth="354.0" />
+            <TextField fx:id="untersuchungsberichtSymptome" promptText="Symptome" />
+            <Pane prefHeight="12.0" prefWidth="354.0" />
+            <TextField fx:id="untersuchungsberichtICD" promptText="ICD Diagnoseschlüssel" />
+            <Pane prefHeight="12.0" prefWidth="354.0" />
+            <TextField fx:id="untersuchungsberichtBehandlung" promptText="Gewählte Behandlung">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <Pane prefHeight="12.0" prefWidth="354.0" />
+            <TextArea fx:id="untersuchungsberichtMedikamente" prefHeight="50.0" prefWidth="350.0" promptText="Bereits verabreichte Medikamente" />
+            <Pane prefHeight="12.0" prefWidth="354.0" />
+            <TextArea fx:id="untersuchungsberichtNotesField" prefHeight="67.0" prefWidth="345.0" promptText="Notizen" />
+            <Pane layoutX="10.0" layoutY="220.0" prefHeight="12.0" prefWidth="354.0" />
+            <StackPane alignment="CENTER_LEFT" prefHeight="20.0" prefWidth="350.0">
+               <children>
+                  <Text fx:id="mehrereFehler" fill="RED" layoutX="10.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mehrere Formatfehler vorhanden!" visible="false" />
+                  <Text fx:id="versicherungsFehler" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Versicherungsnummer existiert nicht!" visible="false" />
+                  <Text fx:id="iCDFehler" fill="RED" layoutX="10.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ICD ist im Falschen Format!" visible="false" />
+                  <Text fx:id="uhrzeitFehler" fill="RED" layoutX="10.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Uhrzeit ist im Falschen Format!" visible="false" />
+                  <Text fx:id="speicherMessage" fill="LIME" layoutX="10.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Daten geprüft. Zum Speichern den Speichern Knopf drücken." visible="false" />
+                  <Text fx:id="felderAusfuellen" fill="RED" layoutX="10.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bitte alle Felder ausfüllen!" visible="false" />
+               </children>
+            </StackPane>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <Pane prefHeight="94.0" prefWidth="469.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="89.0" layoutY="25.0" text="Untersuchungsbericht">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </top>
+   <left>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="492.0" prefWidth="60.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="447.0" prefWidth="60.0" BorderPane.alignment="CENTER" />
+   </right>
+   <bottom>
+      <Pane prefHeight="60.0" prefWidth="469.0" BorderPane.alignment="CENTER">
+         <children>
+            <StackPane layoutX="272.0" prefHeight="60.0" prefWidth="191.0">
+               <children>
+                  <Button fx:id="untersuchungsberichtCheckButton" mnemonicParsing="false" onAction="#bestaetigen" prefHeight="25.0" prefWidth="80.0" text="Bestätigen" />
+                  <Button fx:id="untersuchungsberichtSaveButton" disable="true" layoutX="73.0" layoutY="28.0" mnemonicParsing="false" onAction="#save" opacity="0.0" prefHeight="25.0" prefWidth="80.0" text="Speichern" />
+               </children>
+            </StackPane>
+            <Button fx:id="zuruck" layoutX="61.0" layoutY="18.0" mnemonicParsing="false" onAction="#zumMainView" prefHeight="25.0" prefWidth="73.0" text="Zurück" />
+         </children>
+      </Pane>
+   </bottom>
+</fx:root>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" type="ScrollPane" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <content>
+      <BorderPane fx:id="ArtzPreviewPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="916.0" prefWidth="625.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <GridPane>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Überweisungsschein" textAlignment="CENTER" wrappingWidth="202.830078125" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </GridPane>
+                  <GridPane prefHeight="207.0" prefWidth="573.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="278.0" minWidth="10.0" prefWidth="270.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="331.0" minWidth="10.0" prefWidth="295.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="54.0" minHeight="0.0" prefHeight="0.0" />
+                        <RowConstraints maxHeight="286.0" minHeight="0.0" prefHeight="32.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="291.0" minHeight="0.0" prefHeight="32.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="410.0" minHeight="8.0" prefHeight="97.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="484.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="484.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Address" GridPane.rowIndex="3" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Name von zu überweisendem Artz" GridPane.rowIndex="4" />
+                        <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Patientname :      " />
+                              <Text fx:id="Name" strokeType="OUTSIDE" strokeWidth="0.0" text="aaaaaaaaaa" visible="false" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Versicherungsnummer :     " />
+                              <Text fx:id="Versicherungsnum" strokeType="OUTSIDE" strokeWidth="0.0" text="9999999999" visible="false" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Geburtsdatum              :     " />
+                              <Text fx:id="BirthDay" strokeType="OUTSIDE" strokeWidth="0.0" text="10.09.1998" visible="false" />
+                           </children>
+                        </HBox>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <ScrollPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <content>
+                              <TextFlow fx:id="Adress" prefHeight="94.0" prefWidth="301.0" />
+                           </content>
+                        </ScrollPane>
+                        <Text fx:id="ArtzBez" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Geschlecht    :     " />
+                              <Text fx:id="Sex" strokeType="OUTSIDE" strokeWidth="0.0" text="männlich" visible="false" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </GridPane>
+                  <GridPane prefHeight="529.0" prefWidth="561.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="522.0" minWidth="10.0" prefWidth="175.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="473.0" minWidth="10.0" prefWidth="390.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="528.0" minHeight="10.0" prefHeight="122.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="528.0" minHeight="10.0" prefHeight="406.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="70.0" minHeight="1.0" prefHeight="1.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <ScrollPane prefHeight="274.0" prefWidth="363.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <content>
+                              <FlowPane fx:id="Flow" prefHeight="527.0" prefWidth="389.0" />
+                           </content>
+                        </ScrollPane>
+                        <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Medizinische Daten" />
+                           </children>
+                        </VBox>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Auftrag" />
+                        <ScrollPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+                           <content>
+                              <TextFlow fx:id="Auftragtext" prefHeight="123.0" prefWidth="400.0" />
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </GridPane>
+                  <GridPane>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Artznummer: " />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Datum: " GridPane.rowIndex="1" />
+                        <Button fx:id="Bestaetigen" mnemonicParsing="false" onAction="#ToMainView" prefHeight="25.0" prefWidth="284.0" text="Bestätigen" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Button fx:id="Zurück" mnemonicParsing="false" onAction="#ToCreateUeberweisung" prefHeight="25.0" prefWidth="282.0" text="Zurueck" GridPane.rowIndex="2" />
+                        <Text fx:id="ArtzNum" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" GridPane.columnIndex="1" />
+                        <Text fx:id="Datum" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+               </children>
+               <BorderPane.margin>
+                  <Insets left="20.0" right="20.0" top="10.0" />
+               </BorderPane.margin>
+            </VBox>
+         </center>
+      </BorderPane>
+   </content>
+</fx:root>

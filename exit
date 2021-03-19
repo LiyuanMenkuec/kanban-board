@@ -1,0 +1,364 @@
+[33mcommit 59c425b9c265e9834e40b1ab9751a7804e80dbff[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Gero Grühn <gero.gruehn@tu-dortmund.de>
+Date:   Tue Aug 18 18:10:40 2020 +0200
+
+    getters setters and constructor
+
+[33mcommit 903093451ffc9b22c87f3eeafa915e0265b59f4a[m
+Author: Gero Grühn <gero.gruehn@tu-dortmund.de>
+Date:   Tue Aug 18 17:59:13 2020 +0200
+
+    Daten mit Konstruktoren und Getters und Setters
+
+[33mcommit 2b8930c493ccca470c6ec989ea1d93bd9d4497d1[m
+Author: Gero Grühn <gero.gruehn@tu-dortmund.de>
+Date:   Tue Aug 18 17:06:51 2020 +0200
+
+    Getters und Setters hinzugefügt
+
+[33mcommit 35a57c97dbc370160549c614adcdb2c06bb9a829[m
+Author: xAdler <privat@adlerjulian.de>
+Date:   Tue Aug 18 13:16:05 2020 +0200
+
+    - CommentController JavaDoc sketch
+
+[33mcommit cd049b6208580b32a11f6a3a62f94df81769a6ce[m
+Merge: e1eec04 3c0c8fd
+Author: Gero Grühn <gero.gruehn@tu-dortmund.de>
+Date:   Tue Aug 18 12:31:33 2020 +0200
+
+    Merge branch 'master' of https://sopra-gitlab.cs.tu-dortmund.de/sopra20C/gruppe08/projekt1
+
+[33mcommit e1eec046ecd19ea64f820d856fbdc0a7ff19940c[m
+Author: Gero Grühn <gero.gruehn@tu-dortmund.de>
+Date:   Tue Aug 18 12:30:36 2020 +0200
+
+    Klassen angepasst
+
+[33mcommit 3c0c8fd235de2056d9287888a0ab6607e9bedf75[m
+Author: Fabian Kemper <mail@fabiankemper.de>
+Date:   Tue Aug 18 12:07:16 2020 +0200
+
+    Updated CI Pipeline
+
+[33mcommit b49673b5a0d1a589ee0b7a28ef17a03fc32456bf[m
+Author: xAdler <privat@adlerjulian.de>
+Date:   Tue Aug 18 11:40:20 2020 +0200
+
+    - Formatted MainWindowController
+
+[33mcommit 6b81c52e325c9cb2a4fa619475e1dd4ff34f7f89[m
+Author: Anne-Kathrin Stockey <sopr085.sopra@cs.uni-dortmund.de>
+Date:   Mon Aug 17 23:36:18 2020 +0200
+
+    Replace ViewProjectList.fxml
+
+[33mcommit a1e6b1d1aa0d08a85be06e8cf231a7a7b17c64cd[m
+Author: Anne-Kathrin Stockey <sopr085.sopra@cs.uni-dortmund.de>
+Date:   Mon Aug 17 23:13:16 2020 +0200
+
+    Replace ViewProjectList.fxml
+
+[33mcommit 0710915d09f23a2cdf462bdad292917ce8519fee[m
+Author: Anne-Kathrin Stockey <sopr085.sopra@cs.uni-dortmund.de>
+Date:   Mon Aug 17 23:12:55 2020 +0200
+
+    Replace ViewProjectDetails.fxml
+
+[33mcommit 7a76b0f8e6e86d6915fd3faafea131f13c5ce287[m
+Author: Anne-Kathrin Stockey <sopr085.sopra@cs.uni-dortmund.de>
+Date:   Mon Aug 17 23:12:27 2020 +0200
+
+    Replace ViewProjectList.fxml
+
+[33mcommit 8cb3cc7664d7e2f73733d334278f229e99a1aaa1[m
+Author: Gero Grühn <gero.gruehn@tu-dortmund.de>
+Date:   Mon Aug 17 21:08:43 2020 +0200
+
+    Titel und Icon hinzugefügt
+
+[33mcommit ff67dd19a9e0b8dae8c1c39680d2cb70449984e4[m
+Author: Gero Grühn <gero.gruehn@tu-dortmund.de>
+Date:   Mon Aug 17 20:21:03 2020 +0200
+
+    Fenstergröße beim Start auf Bildschirmgröße gesetzt
+    Statusleiste zum Hauptfenster hinzugefügt
+
+[33mcommit c2cd2983d4c32e56e806478ca5bb13780212915d[m
+Author: Gero Grühn <gero.gruehn@tu-dortmund.de>
+Date:   Mon Aug 17 20:03:42 2020 +0200
+
+    WorkerDetails zum Testen zur Detailansicht hinzugefügt
+
+[33mcommit 8c73f8e91cd702f996267651603f6824525cac68[m
+Author: Gero Grühn <gero.gruehn@tu-dortmund.de>
+Date:   Mon Aug 17 18:18:04 2020 +0200
+
+    Kleine Anpassung am ViewGlobalWorkers und MainWindow
+
+[33mcommit a31172f54321bb7b81fdb99efc9f6cbb46b5ddcc[m
+Author: Florian Wellner <sopr089.sopra@cs.uni-dortmund.de>
+Date:   Mon Aug 17 17:31:07 2020 +0200
+
+    Update ViewJobComments.fxml
+
+[33mcommit b86af67344f8a304906ec3ef6567de5141d4bb74[m
+Author: Florian Wellner <sopr089.sopra@cs.uni-dortmund.de>
+Date:   Mon Aug 17 17:21:51 2020 +0200
+
+    Update ViewJobComments.fxml
+
+[33mcommit e73650a458a50a8da49fe33e1ef6aea52625ca2d[m
+Author: Abdulrazzak  Shaker <sopr088.sopra@cs.uni-dortmund.de>
+Date:   Mon Aug 17 15:42:09 2020 +0200
+
+    Update ViewWorkerDetails.fxml
+
+[33mcommit c8aad110805d9b849f5cb7b3280507010fd99e6b[m
+Author: Abdulrazzak  Shaker <sopr088.sopra@cs.uni-dortmund.de>
+Date:   Mon Aug 17 15:40:29 2020 +0200
+
+    Upload New VieGlobalWorkers.fxml
+
+[33mcommit 285d76dea606091812a742cec7cca74a29c4b2d4[m
+Author: Abdulrazzak  Shaker <sopr088.sopra@cs.uni-dortmund.de>
+Date:   Mon Aug 17 15:36:55 2020 +0200
+
+    Delete ViewGlobalWorkers.fxml
+
+[33mcommit e17ee5ff6cb7bed502865ab109bf0469b3c50c59[m
+Author: Gero Grühn <gero.gruehn@tu-dortmund.de>
+Date:   Mon Aug 17 10:14:11 2020 +0200
+
+    SplittedView gelöscht da durch titledPane ersetzt
+
+[33mcommit 003959a2818d787108fa4ef0486992c8ae7ec500[m
+Author: Gero Grühn <gero.gruehn@tu-dortmund.de>
+Date:   Mon Aug 17 09:43:21 2020 +0200
+
+    ProjectDetails hinzugefügt
+
+[33mcommit bea1c1b591562d7d161e425741055b23673c6bdd[m
+Author: Gero Grühn <gero.gruehn@tu-dortmund.de>
+Date:   Mon Aug 17 09:39:08 2020 +0200
+
+    ProjectView zu MainWindow hinzugefügt
+
+[33mcommit b94942a3cee6dc7b45049d091d23d07bd0bb8b03[m
+Author: Anne-Kathrin Stockey <sopr085.sopra@cs.uni-dortmund.de>
+Date:   Mon Aug 17 09:22:47 2020 +0200
+
+    Replace ViewProjectDetails.fxml
+
+[33mcommit 9573a0a3fe20212b1078d522594900ce147cb61a[m
+Author: Anne-Kathrin Stockey <sopr085.sopra@cs.uni-dortmund.de>
+Date:   Mon Aug 17 09:21:58 2020 +0200
+
+    Updated ViewProjectList.fxml
+
+[33mcommit f53cd1d046dbbd64d85edb935c954cd9cc5eca88[m
+Author: Gero Grühn <gero.gruehn@tu-dortmund.de>
+Date:   Mon Aug 17 03:08:10 2020 +0200
+
+    Nicht benötigte Imports gelöscht
+
+[33mcommit 8291ea6bcc1b90a9ca54871149c0717818acfbb2[m
+Author: Gero Grühn <gero.gruehn@tu-dortmund.de>
+Date:   Mon Aug 17 03:00:40 2020 +0200
+
+    classpath geändert (bleiben wir bei java 11 oder 13?)
+
+[33mcommit ed7258f25116982181b9103dd1edb79c8c4923e3[m
+Merge: e2443e4 fac625d
+Author: Gero Grühn <gero.gruehn@tu-dortmund.de>
+Date:   Mon Aug 17 02:59:01 2020 +0200
+
+    Merge remote-tracking branch 'origin/master'
+
+[33mcommit e2443e458c986adfdff0ba07aad23f9f9287e76e[m
+Author: Gero Grühn <gero.gruehn@tu-dortmund.de>
+Date:   Mon Aug 17 02:57:38 2020 +0200
+
+    Hauptfenster mit ein paar Unterfenstern gefüllt, ViewController
+    angepasst
+
+[33mcommit fac625d7e81f486b9fcce081dc6f4c74fbddd4d7[m
+Merge: c26145f 6603fea
+Author: Liyuan Menküc <liyuan.menkuec@tu-dortmund.de>
+Date:   Sun Aug 16 21:23:50 2020 +0200
+
+    Merge branch 'master' of https://sopra-gitlab.cs.tu-dortmund.de/sopra20C/gruppe08/projekt1 into master
+
+[33mcommit c26145f7c19c4d51a08220c9bc9cad7e5cba0c14[m
+Author: Liyuan Menküc <liyuan.menkuec@tu-dortmund.de>
+Date:   Sun Aug 16 21:22:03 2020 +0200
+
+    Beschreibung in ViewComment ändert
+
+[33mcommit 6603fea4020f2241e9470c61cfe523575c6cc7e7[m
+Author: Julian Adler <julian.adler@wundermobility.com>
+Date:   Sun Aug 16 21:01:46 2020 +0200
+
+    - Added missing Controller suffix
+
+[33mcommit 99a95fb6d0cbdeb1ad69ed468c4b7bf6fc3c174e[m
+Author: Julian Adler <julian.adler@wundermobility.com>
+Date:   Sun Aug 16 21:00:15 2020 +0200
+
+    - Added Team View Controllers
+
+[33mcommit 1af8abce3a1a205e14b032f39f4fad8be83f9885[m
+Author: Julian Adler <julian.adler@wundermobility.com>
+Date:   Sun Aug 16 20:50:54 2020 +0200
+
+    - Fixed ViewCommentController
+
+[33mcommit 9ce57a6db0ef80d9b932ba7964f8b9aaf6a9e2e4[m
+Author: Liyuan Menküc <liyuan.menkuec@tu-dortmund.de>
+Date:   Sun Aug 16 18:15:56 2020 +0200
+
+    CommentView korriegiert
+
+[33mcommit acf705bde68cd9e3a8048e15df5d6a527d90c88c[m
+Author: Florian Wellner <sopr089.sopra@cs.uni-dortmund.de>
+Date:   Sat Aug 15 15:09:34 2020 +0200
+
+    Update ViewJobComments.fxml
+
+[33mcommit 87db768dbaaed4a4e6f2fe64c7232ebf1d205ccb[m
+Author: Abdulrazzak  Shaker <sopr088.sopra@cs.uni-dortmund.de>
+Date:   Fri Aug 14 21:52:08 2020 +0200
+
+    Upload ViewMitarbeiterlöschen.fxml (Abdul)
+
+[33mcommit c89320da4294cf4cc4815c8f42f04376ce12f2cb[m
+Author: Abdulrazzak  Shaker <sopr088.sopra@cs.uni-dortmund.de>
+Date:   Fri Aug 14 21:51:16 2020 +0200
+
+    Upload ViewMitarbeiterlöschen(project).fxml (Abdul)
+
+[33mcommit 49fabe57899edc09a443a9d8d096c15fad027555[m
+Author: Abdulrazzak  Shaker <sopr088.sopra@cs.uni-dortmund.de>
+Date:   Fri Aug 14 21:49:54 2020 +0200
+
+    Update ViewWorkerDetails.fxml (Abdul)
+
+[33mcommit 46200e633962093eaec5830131c2317cf0015d31[m
+Author: Abdulrazzak  Shaker <sopr088.sopra@cs.uni-dortmund.de>
+Date:   Fri Aug 14 21:48:28 2020 +0200
+
+    Update ViewGlobalWorkers.fxml (Abdul)
+
+[33mcommit fcd4b8ce083837377599c43b6b73e314e6d88b95[m
+Author: Abdulrazzak  Shaker <sopr088.sopra@cs.uni-dortmund.de>
+Date:   Fri Aug 14 21:47:19 2020 +0200
+
+    Update ViewTeamWorkers.fxml
+
+[33mcommit 83b951b30749ffd68c9f2071c5ce109d14b66e2c[m
+Author: Abdulrazzak  Shaker <sopr088.sopra@cs.uni-dortmund.de>
+Date:   Fri Aug 14 21:43:31 2020 +0200
+
+    Update ViewTeamWorkers.fxml (Abdul)
+
+[33mcommit 8cb8c178afecabfb5ceb8dc359f4189771b29d34[m
+Author: Liyuan Menküc <liyuan.menkuec@tu-dortmund.de>
+Date:   Fri Aug 14 15:00:03 2020 +0200
+
+    .classpath hinzugefügt
+
+[33mcommit 2db5c4449a0188efd808ceec1f983cce383b8380[m
+Author: Gero Grühn <gero.gruehn@tu-dortmund.de>
+Date:   Fri Aug 14 14:38:33 2020 +0200
+
+    test
+
+[33mcommit eca9f7bb2c808c140c10bff17b1dde8b8f7bd110[m
+Author: Gero Grühn <gero.gruehn@tu-dortmund.de>
+Date:   Fri Aug 14 14:15:38 2020 +0200
+
+    Klasse und fxml für geteilte recht Seite hinzugefügt
+
+[33mcommit 2383c8e9658f5ec98b737a1847510e649cfc96ce[m
+Merge: e0f8e1f 970d2f4
+Author: Gero Grühn <gero.gruehn@tu-dortmund.de>
+Date:   Fri Aug 14 14:03:30 2020 +0200
+
+    Merge branch 'master' of https://sopra-gitlab.cs.tu-dortmund.de/sopra20C/gruppe08/projekt1
+
+[33mcommit e0f8e1f859d6bfd0f44aa4d674baae220a56005f[m
+Author: Gero Grühn <gero.gruehn@tu-dortmund.de>
+Date:   Fri Aug 14 14:00:30 2020 +0200
+
+    ...
+
+[33mcommit e0ff08aa7a96dd900d48d20e75870ed098dfd8ab[m
+Author: Gero Grühn <gero.gruehn@tu-dortmund.de>
+Date:   Fri Aug 14 13:58:19 2020 +0200
+
+    Klassen und fxml für Ansichten erstellt
+
+[33mcommit c20d83df7a53034d8b926982aa77e80909ee4cde[m
+Author: Gero Grühn <gero.gruehn@tu-dortmund.de>
+Date:   Fri Aug 14 13:57:45 2020 +0200
+
+    Klassen und FXML für die Ansichten erstellt
+
+[33mcommit 970d2f4c2ffce1e4e719fa97a52cdf7c4221efa9[m
+Author: xAdler <privat@adlerjulian.de>
+Date:   Fri Aug 14 09:44:15 2020 +0000
+
+    - Extended .gitignore for Docker and VSCode files
+
+[33mcommit 113e419f9e076249f2926f7393d3279a1ca21275[m
+Author: Gero Grühn <gero.gruehn@tu-dortmund.de>
+Date:   Fri Aug 14 00:09:02 2020 +0200
+
+    die Breite der panes wurde noch gesetzt werden
+
+[33mcommit d562b0558083ff6d6e7205eda11491027a490a94[m
+Merge: 2d4ca0f 6a16b9d
+Author: Gero Grühn <gero.gruehn@tu-dortmund.de>
+Date:   Thu Aug 13 23:29:49 2020 +0200
+
+    Merge remote-tracking branch 'origin/master'
+
+[33mcommit 2d4ca0f107dc7a7784dcfae0e7f1a4bb2f83baf7[m
+Author: sopr08a <gero@R2D2>
+Date:   Thu Aug 13 22:27:07 2020 +0200
+
+    Variable umbenannt
+
+[33mcommit 47af0297e4e6bdd28be4c56438e0ebd8d8840988[m
+Author: sopr08a <gero@R2D2>
+Date:   Thu Aug 13 22:16:37 2020 +0200
+
+    Beispiel
+    
+    Nur ein kleines Beispiel um das laden eines Inhalts in einen anderen zu
+    demonstrieren. Sieht also auch noch nicht hübsch aus.
+
+[33mcommit 6a16b9d0c65a97845631dd7e390a0dc14d506315[m
+Merge: 87ef014 96a7586
+Author: Liyuan Menküc <liyuan.menkuec@tu-dortmund.de>
+Date:   Thu Aug 13 15:01:37 2020 +0200
+
+    Merge branch 'master' of https://sopra-gitlab.cs.tu-dortmund.de/sopra20C/gruppe08/projekt1 into master
+
+[33mcommit 96a7586769857020f2b4d9716fb356e9407b8e01[m
+Author: sopr08a <gero@R2D2>
+Date:   Thu Aug 13 14:52:23 2020 +0200
+
+    test Commit
+
+[33mcommit 87ef0143bd7ffef639a45f9fc41bbbed47af411b[m
+Author: Liyuan Menküc <liyuan.menkuec@tu-dortmund.de>
+Date:   Thu Aug 13 14:45:36 2020 +0200
+
+    commentView
+
+[33mcommit 25d5eff95136d9c3d0edbfb2798e5588e994708d[m
+Author: Jekannadar <jekannadar@sopra-gitlab.cs.tu-dortmund.de>
+Date:   Sat Aug 8 00:12:46 2020 +0200
+
+    Initialize repository with project template
